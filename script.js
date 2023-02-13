@@ -84,9 +84,9 @@ $(document).ready(() => {
         let s = "";
         if (!empty) {
             if (scs > 0) {
-                s += "<p>Success!</p>";
+                s += "<p>Success! " + scs + "</p>";
             } else {
-                s += "<p>Failure.</p>";
+                s += "<p>Failure. " + (-scs) + "</p>";
             };
             if (adv > 0) {
                 s += "<p>Advantage: " + adv + "</p>";
