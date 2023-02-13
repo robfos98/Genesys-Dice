@@ -1,0 +1,169 @@
+@font-face {
+    font-family: dice;
+    src: url("../../Genesys-Dice/GenesysGlyphsAndDice-3.0.ttf") format('truetype');
+    font-style: normal;
+}
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url(stars.jpeg);
+    color: blue;
+    display: grid;
+    grid-template-columns: 12rem auto;
+    grid-template-rows: auto, 24rem, 8rem;
+}
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 2rem;
+}
+aside {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 24rem;
+}
+div {
+    display: inline;
+}
+div, article {
+    height: 6rem;
+    width: 6rem;
+    font-size: 6rem;
+    text-align: center;
+    -webkit-text-stroke: 1px blue;
+    text-stroke: 1px blue;
+    overflow: hidden;
+}
+article {
+    float: left;
+}
+.left {
+    grid-column: 1;
+}
+div:not(.left) {
+    grid-column: 2;
+}
+.symbol {
+    color: black;
+    -webkit-text-stroke: 0 black;
+    text-stroke: 0 black;
+    font-family: dice;
+    position: relative;
+    font-size: 2rem;
+}
+.bad {
+    color: rgb(220, 190, 23);
+}
+#yellow, .yellow {
+    color: yellow
+}
+#red, .red {
+    color: rgb(174, 0, 0);
+}
+.pentagon {
+    position: relative;
+    top: -0.5rem;
+}
+.symbol.pentagon {
+    top: -1.1rem;
+    left: -3.8rem;
+}
+.symbol.pentagon.fill-slate {
+    top: -8.7rem;
+    left: 0;
+}
+#green, .green {
+    color: rgb(4, 182, 4);
+}
+#purple, .purple {
+    color: rgb(186, 9, 186);
+}
+.triangle {
+    position: relative;
+    top: -1.5rem;
+}
+.symbol.triangle {
+    top: -2rem;
+    left: -3.9rem;
+}
+.symbol.triangle.fill-slate {
+    font-size: 1.7rem;
+    top: -9rem;
+    left: 0;
+}
+#blue, .blue {
+    color: rgb(2, 174, 247);
+}
+#black, .black {
+    color: black;
+}
+.square {
+    font-size: 12rem;
+    position: relative;
+    top: -4.9rem;
+    left: -0.6rem;
+}
+.symbol.square {
+    font-size: 2rem;
+    left: -4.6rem;
+    top: -7.8rem;
+}
+.symbol.square.fill-slate {
+    left: -0.2rem;
+    top: -16.1rem;
+}
+#hundo {
+    width: 12rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.diamond {
+    color: rgb(190, 190, 190);
+    font-size: 12rem;
+    position: relative;
+    top: -6rem;
+}
+.slate.diamond {
+    left: -3rem;
+}
+.symbol.diamond {
+    font-size: 1.5rem;
+    top: -10rem;
+    left: -7.4rem;
+    color: rgb(164, 21, 21);
+    font-weight: bolder;
+}
+.symbol.diamond.fill-slate {
+    top: -19.8rem;
+    left: 0;
+}
+button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 2rem;
+    margin: 3rem;
+    background-color: blue;
+    border-radius: 1.5rem;
+    border: 0;
+}
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+section {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: calc(100vh - 43rem);
+}
