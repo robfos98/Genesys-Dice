@@ -7,7 +7,7 @@ body {
     margin: 0;
     background-color: black;
     background-image: url(stars.jpeg);
-    color: blue;
+    color: rgb(0, 64, 255);
     display: grid;
     grid-template-columns: 12rem auto;
     grid-template-rows: auto, 24rem, 8rem;
@@ -36,8 +36,6 @@ div, article {
     width: 6rem;
     font-size: 6rem;
     text-align: center;
-    -webkit-text-stroke: 1px blue;
-    text-stroke: 1px blue;
     overflow: hidden;
 }
 article {
@@ -82,7 +80,7 @@ div:not(.left) {
     color: rgb(4, 182, 4);
 }
 #purple, .purple {
-    color: rgb(186, 9, 186);
+    color: rgb(176, 1, 192);
 }
 .triangle {
     position: relative;
@@ -102,6 +100,8 @@ div:not(.left) {
 }
 #black, .black {
     color: black;
+    -webkit-text-stroke: 1px blue;
+    text-stroke: 1px blue;
 }
 .square {
     font-size: 12rem;
@@ -166,4 +166,9 @@ section {
     grid-row-start: 4;
     grid-row-end: 5;
     height: calc(100vh - 43rem);
+    text-align: center;
+    font-size: 3rem;
+}
+p {
+    margin: 0;
 }
