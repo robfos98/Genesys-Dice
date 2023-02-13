@@ -80,7 +80,7 @@ div:not(.left) {
     color: rgb(4, 182, 4);
 }
 #purple, .purple {
-    color: rgb(176, 1, 192);
+    color: rgb(108, 0, 118);
 }
 .triangle {
     position: relative;
@@ -100,8 +100,8 @@ div:not(.left) {
 }
 #black, .black {
     color: black;
-    -webkit-text-stroke: 1px blue;
-    text-stroke: 1px blue;
+    -webkit-text-stroke: 1px rgb(0, 0, 145);
+    text-stroke: 1px rgb(0, 0, 145);
 }
 .square {
     font-size: 12rem;
