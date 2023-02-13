@@ -28,6 +28,11 @@ aside {
     grid-row-end: 3;
     height: 24rem;
 }
+aside, main, button {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
 div {
     display: inline;
 }
