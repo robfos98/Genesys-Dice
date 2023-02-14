@@ -64,7 +64,7 @@ div:not(.left) {
     color: rgb(220, 190, 23);
 }
 #yellow, .yellow {
-    color: rgb(220, 190, 23)
+    color: rgb(220, 190, 23);
 }
 #red, .red {
     color: rgb(174, 0, 0);
@@ -105,8 +105,8 @@ div:not(.left) {
 }
 #black, .black {
     color: black;
-    -webkit-text-stroke: 1px rgb(0, 0, 145);
-    text-stroke: 1px rgb(0, 0, 145);
+    -webkit-text-stroke: 1px rgb(220, 190, 23);
+    text-stroke: 1px rgb(220, 190, 23);
 }
 .square {
     font-size: 12rem;
