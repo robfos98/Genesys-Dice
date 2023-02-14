@@ -11,12 +11,14 @@ $(document).ready(() => {
         if ($(this).attr('id') == 'roll') {
             let scs = 0;
             let adv = 0;
-            let tri = 0;
+            let ump = 0;
             let air = 0;
             let empty = true;
             $('article').each(function(index) {
                 let x = Math.random();
                 let s = "";
+                let center = false;
+                let tri = false;
                 switch($(this).attr('class')) {
                     case "blue":
                         empty = false;
@@ -36,20 +38,22 @@ $(document).ready(() => {
                         break;
                     case "green":
                         empty = false;
+                        tri = true;
                         x *= 8;
-                        if (x < 2) { s += "s"; scs++;
+                        if (x < 2) { s += "s"; scs++; center = true;
                         } else if (x < 3) { s += "ss"; scs += 2;
-                        } else if (x < 5) { s += "a"; adv++;
+                        } else if (x < 5) { s += "a"; adv++; center = true;
                         } else if (x < 6) { s += "sa"; scs++; adv++;
                         } else if (x < 7) { s += "aa"; adv += 2;
                         };
                         break;
                     case "purple":
                         empty = false;
+                        tri = true;
                         x *= 8;
-                        if (x < 1) { s += "f"; scs--;
+                        if (x < 1) { s += "f"; scs--; center = true;
                         } else if (x < 2) { s += "ff"; scs -= 2;
-                        } else if (x < 5) { s += "h"; adv--;
+                        } else if (x < 5) { s += "h"; adv--; center = true;
                         } else if (x < 6) { s += "hh"; adv -= 2;
                         } else if (x < 7) { s += "fh"; scs--; adv--;
                         };
@@ -62,7 +66,7 @@ $(document).ready(() => {
                         } else if (x < 5) { s += "a"; adv++;
                         } else if (x < 8) { s += "sa"; scs++; adv++;
                         } else if (x < 10) { s += "aa"; adv += 2;
-                        } else if (x < 11) { s += "t"; tri++; scs++;
+                        } else if (x < 11) { s += "t"; ump++; scs++;
                         };
                         break;    
                     case "red":
@@ -80,6 +84,12 @@ $(document).ready(() => {
                         x = Math.floor(100 * x) + 1;
                         s += x;
                     };
+                if (tri) {
+                    $(this).children().eq(1).removeClass('center');
+                };
+                if (center) {
+                    $(this).children().eq(1).addClass('center');
+                };
                 $(this).children().eq(1).text(s);
             });
             let s = "";
@@ -94,8 +104,8 @@ $(document).ready(() => {
                 } else if (adv < 0) {
                     s += "<p>Disadvantage: " + (-adv) + "</p>";
                 };
-                if (tri > 0) {
-                    s += "<p>Triumph: " + tri + "</p>";
+                if (ump > 0) {
+                    s += "<p>Triumph: " + ump + "</p>";
                 };
                 if (air > 0) {
                     s += "<p>Despair: " + air + "</p>";

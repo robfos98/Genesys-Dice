@@ -64,7 +64,7 @@ div:not(.left) {
     color: rgb(220, 190, 23);
 }
 #yellow, .yellow {
-    color: yellow
+    color: rgb(220, 190, 23)
 }
 #red, .red {
     color: rgb(174, 0, 0);
@@ -82,7 +82,7 @@ div:not(.left) {
     left: 0;
 }
 #green, .green {
-    color: rgb(4, 182, 4);
+    color: rgb(2, 163, 2);
 }
 #purple, .purple {
     color: rgb(108, 0, 118);
@@ -101,7 +101,7 @@ div:not(.left) {
     left: 0;
 }
 #blue, .blue {
-    color: rgb(2, 174, 247);
+    color: rgb(0, 143, 204);
 }
 #black, .black {
     color: black;
@@ -147,6 +147,10 @@ div:not(.left) {
 .symbol.diamond.fill-slate {
     top: -19.8rem;
     left: 0;
+}
+.symbol.triangle.fill-slate.center {
+    font-size: 2rem;
+    top: -9.4rem;
 }
 button {
     height: 3rem;
