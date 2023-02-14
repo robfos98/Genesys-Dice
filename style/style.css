@@ -13,7 +13,7 @@ body {
     grid-template-rows: auto, 24rem, 8rem;
 }
 header {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -44,7 +44,7 @@ div, article, button {
     overflow: hidden;
 }
 article {
-    float: left;
+    display: inline-block;
 }
 .left {
     grid-column: 1;
@@ -162,13 +162,15 @@ button {
     border-radius: 1.5rem;
 }
 main {
+    display: table;
+    margin: 0 auto;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 section {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
